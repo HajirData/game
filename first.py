@@ -58,17 +58,17 @@ class Board:
 
     def is_alive(self, row: int, col: int) -> bool:
         """Return True if cell is alive."""
-        # Put your code here
+        return self.board[row][col]Put your code here
         pass
 
     def place_cell(self, row: int, col: int):
         """Make a cell alive."""
-        # Put your code here
+        self.board[row][col] = True
         pass
 
     def toggle_cell(self, row: int, col: int) -> None:
         """Invert state of the cell."""
-        # Put your code here
+        self.board[row][col] = not self.board[row][col]
         pass
 
 
